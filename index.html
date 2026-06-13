@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EVIDENCE — A website that argues for itself</title>
+  <meta name="description" content="A single page about why a business needs a great website. The twist: this page is the proof. Independent design engineering by a senior practitioner." />
+
+  <!-- Fonts: Clash Display (display) + Satoshi (workhorse) via Fontshare -->
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&f[]=satoshi@400,500,700,900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+  <!-- Grain + custom cursor live above everything -->
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+  <!-- Top status bar -->
+  <header class="topbar">
+    <div class="topbar__mark">EVIDENCE<span class="blink">_</span></div>
+    <div class="topbar__meta">
+      <span>EST. NOW</span>
+      <span class="topbar__live"><i></i>THIS PAGE IS THE PORTFOLIO</span>
+    </div>
+    <a href="#contact" class="topbar__cta" data-magnetic>START A PROJECT</a>
+  </header>
+
+  <main>
+    <!-- ============ 1. HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero__grid" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+
+      <div class="hero__eyebrow">
+        <span data-reveal-eyebrow>Independent design engineer</span>
+        <span data-reveal-eyebrow>Sites that win, and sites that close</span>
+      </div>
+
+      <h1 class="hero__title">
+        <span class="line"><span class="line__inner">THE WEB IS</span></span>
+        <span class="line"><span class="line__inner">WHERE YOU</span></span>
+        <span class="line accent"><span class="line__inner">WIN OR</span></span>
+        <span class="line"><span class="line__inner">VANISH.</span></span>
+      </h1>
+
+      <div class="hero__foot">
+        <p class="hero__thesis">
+          This page is the argument. Every claim it makes about what a website can do —
+          it is already doing to you, right now.
+        </p>
+        <a href="#cost" class="scrollcue" data-magnetic>
+          <span>SCROLL FOR PROOF</span>
+          <svg viewBox="0 0 24 40" width="22" height="38"><rect x="1" y="1" width="22" height="38" rx="11" fill="none" stroke="currentColor" stroke-width="2"/><circle class="scrollcue__ball" cx="12" cy="11" r="3.5" fill="currentColor"/></svg>
+        </a>
+      </div>
+
+      <div class="hero__marquee" aria-hidden="true">
+        <div class="hero__marquee-track" id="heroMarquee">
+          <span>ATTENTION&nbsp;·&nbsp;TRUST&nbsp;·&nbsp;DESIRE&nbsp;·&nbsp;</span>
+          <span>ATTENTION&nbsp;·&nbsp;TRUST&nbsp;·&nbsp;DESIRE&nbsp;·&nbsp;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 2. THE COST ============ -->
+    <section class="cost" id="cost">
+      <div class="section-head">
+        <span class="kicker" data-reveal>01 — THE COST</span>
+        <h2 class="section-title" data-reveal-lines>
+          Silence is not neutral.<br />It is a slow leak.
+        </h2>
+      </div>
+
+      <div class="cost__lead" data-reveal>
+        <p>
+          An absent — or worse, <em>mediocre</em> — website doesn't sit there politely.
+          It works against you. Every dull page is a door closing. Every clumsy
+          load is a hand never shaken. You are losing people you'll never meet,
+          to a competitor whose site simply felt more alive.
+        </p>
+      </div>
+
+      <ul class="cost__list">
+        <li data-cost>
+          <span class="cost__no">A.</span>
+          <h3>The 50-millisecond verdict.</h3>
+          <p>People judge your credibility before they read a single word. A weak first frame is a verdict you never get to appeal.</p>
+        </li>
+        <li data-cost>
+          <span class="cost__no">B.</span>
+          <h3>The bounce you can't see.</h3>
+          <p>They don't email to say it felt cheap. They just leave — and quietly assume the work is cheap too.</p>
+        </li>
+        <li data-cost>
+          <span class="cost__no">C.</span>
+          <h3>The compounding gap.</h3>
+          <p>Every month on a tired site, a sharper competitor banks the trust that should have been yours. The gap doesn't hold steady. It widens.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============ 3. WHAT A GREAT SITE DOES (pinned) ============ -->
+    <section class="does" id="does">
+      <div class="does__sticky">
+        <div class="does__head">
+          <span class="kicker">02 — WHAT A GREAT SITE ACTUALLY DOES</span>
+          <p class="does__count"><span id="doesIndex">01</span> / 04</p>
+        </div>
+
+        <div class="does__stage">
+          <article class="does__panel is-active" data-panel="0">
+            <span class="does__verb">It earns trust</span>
+            <h3>before you<br />say a word.</h3>
+            <p>Layout, type, pace, restraint — these speak first and loudest. Get them right and you've won the argument before the pitch begins.</p>
+          </article>
+          <article class="does__panel" data-panel="1">
+            <span class="does__verb">It works</span>
+            <h3>while you<br />are asleep.</h3>
+            <p>The only team member that never clocks out. It qualifies, persuades, and books — at 3am, on a Sunday, in a timezone you've never visited.</p>
+          </article>
+          <article class="does__panel" data-panel="2">
+            <span class="does__verb">It turns attention</span>
+            <h3>into<br />intent.</h3>
+            <p>A click is curiosity. The job of the site is to walk that curiosity, frame by frame, to the moment someone decides: <em>these are the people.</em></p>
+          </article>
+          <article class="does__panel" data-panel="3">
+            <span class="does__verb">It makes you</span>
+            <h3>impossible<br />to forget.</h3>
+            <p>Most sites are wallpaper. A great one leaves a dent — a feeling people carry into the meeting where your name comes up.</p>
+          </article>
+        </div>
+
+        <div class="does__progress" aria-hidden="true">
+          <span data-bar="0"></span><span data-bar="1"></span><span data-bar="2"></span><span data-bar="3"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4. PROOF / STATS ============ -->
+    <section class="stats" id="stats">
+      <div class="section-head">
+        <span class="kicker" data-reveal>03 — THE NUMBERS DON'T HEDGE</span>
+        <h2 class="section-title" data-reveal-lines>You are being measured.<br/>Constantly.</h2>
+      </div>
+
+      <div class="stats__grid">
+        <div class="stat" data-stat>
+          <span class="stat__num" data-count="50" data-suffix="ms">0</span>
+          <span class="stat__rule"></span>
+          <p class="stat__label">to form a first impression of your site. Faster than a blink, and almost impossible to reverse.</p>
+        </div>
+        <div class="stat" data-stat>
+          <span class="stat__num" data-count="88" data-suffix="%">0</span>
+          <span class="stat__rule"></span>
+          <p class="stat__label">of visitors are less likely to return after a single bad experience. One leak, permanent.</p>
+        </div>
+        <div class="stat" data-stat>
+          <span class="stat__num" data-count="1" data-prefix="+" data-suffix="s = −7%">0</span>
+          <span class="stat__rule"></span>
+          <p class="stat__label">A one-second delay can cut conversions by roughly seven percent. Speed is a feature you can feel.</p>
+        </div>
+        <div class="stat" data-stat>
+          <span class="stat__num" data-count="75" data-suffix="%">0</span>
+          <span class="stat__rule"></span>
+          <p class="stat__label">judge a company's credibility on design alone. Your taste is read as your competence.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5. EXPERIENCE LAYER (horizontal) ============ -->
+    <section class="exp" id="experience">
+      <div class="exp__pin">
+        <div class="exp__intro">
+          <span class="kicker">04 — THE EXPERIENCE LAYER</span>
+          <h2>Polish<br/>is the<br/>message.</h2>
+          <p>Drag your eyes right. This is range.</p>
+        </div>
+        <div class="exp__track" id="expTrack">
+          <article class="card">
+            <span class="card__idx">01</span>
+            <h3>Motion with intent</h3>
+            <p>Animation that points, paces, and persuades — never noise for its own sake. Every move earns its frame.</p>
+          </article>
+          <article class="card">
+            <span class="card__idx">02</span>
+            <h3>Type as architecture</h3>
+            <p>A real pairing on a strict scale. Type is the loudest signal of quality — treated like structure, not decoration.</p>
+          </article>
+          <article class="card">
+            <span class="card__idx">03</span>
+            <h3>Weighted feel</h3>
+            <p>Smooth, inertial scroll and micro-interactions that respond to the cursor. The whole thing feels built, not assembled.</p>
+          </article>
+          <article class="card">
+            <span class="card__idx">04</span>
+            <h3>Performance as respect</h3>
+            <p>60fps, no jank, reduced-motion honored. Fast is a courtesy. Courtesy converts.</p>
+          </article>
+          <article class="card card--accent">
+            <span class="card__idx">05</span>
+            <h3>The point</h3>
+            <p>You just scrolled sideways through a sales argument and enjoyed it. That is what a great website does to a buyer.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6. PROCESS ============ -->
+    <section class="process" id="process">
+      <div class="section-head">
+        <span class="kicker" data-reveal>05 — WORKING TOGETHER</span>
+        <h2 class="section-title" data-reveal-lines>No mystery.<br/>No fog. Four moves.</h2>
+      </div>
+
+      <ol class="process__list">
+        <li data-process>
+          <div class="process__step">01</div>
+          <div class="process__body">
+            <h3>Interrogate</h3>
+            <p>We find the one thing your site must make a stranger feel. Everything else gets cut. Clarity before pixels.</p>
+          </div>
+        </li>
+        <li data-process>
+          <div class="process__step">02</div>
+          <div class="process__body">
+            <h3>Design the argument</h3>
+            <p>Structure, type, motion, and copy designed as a single persuasive sequence — not a stack of sections.</p>
+          </div>
+        </li>
+        <li data-process>
+          <div class="process__step">03</div>
+          <div class="process__body">
+            <h3>Build it for real</h3>
+            <p>Hand-built front-end. Fast, responsive, accessible, and animated with intent. The kind of craft you can feel scrolling.</p>
+          </div>
+        </li>
+        <li data-process>
+          <div class="process__step">04</div>
+          <div class="process__body">
+            <h3>Ship & sharpen</h3>
+            <p>Launch, measure, refine. A site is a living asset. We keep it earning.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ 7. CLOSING CTA ============ -->
+    <section class="end" id="contact">
+      <div class="end__grain" aria-hidden="true"></div>
+      <p class="end__kicker" data-reveal>YOU READ THE WHOLE THING.<br/>THAT WAS THE DEMO.</p>
+      <h2 class="end__title">
+        <span class="line"><span class="line__inner">LET'S BUILD</span></span>
+        <span class="line"><span class="line__inner">THE VERSION</span></span>
+        <span class="line"><span class="line__inner">OF YOU THAT</span></span>
+        <span class="line accent"><span class="line__inner">CLOSES.</span></span>
+      </h2>
+
+      <div class="end__actions">
+        <a href="mailto:hello@evidence.studio?subject=Let's%20build%20something%20that%20closes" class="btn-major" data-magnetic>
+          <span>START A PROJECT</span>
+          <svg viewBox="0 0 24 24" width="20" height="20"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="mailto:hello@evidence.studio" class="end__mail" data-magnetic>hello@evidence.studio</a>
+      </div>
+
+      <footer class="end__footer">
+        <span>EVIDENCE — DESIGN ENGINEERING</span>
+        <span>BUILT TO BE THE PROOF</span>
+        <span>© <span id="year">2026</span></span>
+      </footer>
+    </section>
+  </main>
+
+  <!-- GSAP + ScrollTrigger + Lenis via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
